@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom';
 
-
 function Login() {
   const [errorMessages, setErrorMessages] = useState({})
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -86,9 +85,11 @@ function Login() {
 
   return (
     <div className="app">
+    
       <div className="login-form">
         <div className="title">Login to Student Portal</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+        {isSubmitted ? 
+        <div>User is successfully logged in</div> : renderForm}
       </div>
 
       <Link to="/ForgotPassword">
