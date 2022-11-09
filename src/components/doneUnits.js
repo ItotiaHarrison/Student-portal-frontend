@@ -49,6 +49,12 @@ export default function DoneUnits({ courses, setCourses, search, setSearch }) {
 
                 </div>
 
+                <div>
+                    <header>Description</header>
+                    <p></p>
+
+                </div>
+
                 {courseList}
             </section>
 
