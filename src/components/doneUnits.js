@@ -49,16 +49,6 @@ export default function DoneUnits({ courses, setCourses, search, setSearch }) {
 
                 </div>
 
-                <div>
-                    <header>Unit Review</header>
-                    <p></p>
-                </div>
-
-                <div>
-                    <header>Unit Grade</header>
-                    <p></p>
-                </div>
-
                 {courseList}
             </section>
 
