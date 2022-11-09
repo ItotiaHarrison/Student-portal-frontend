@@ -1,3 +1,4 @@
+import React from 'react';
 import {Routes, Route, Link} from 'react-router-dom'
 import Academics from './academics'
 import StudentInfo from './studentInfo'
@@ -6,6 +7,8 @@ import ImportContactsIcon from '@mui/icons-material/ImportContacts';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import ExitToAppRoundedIcon from '@mui/icons-material/ExitToAppRounded';
 import logo from '../assets/logo.jpg';
+
+
 export default function Dashboard (){
     return (
         <main id="container">

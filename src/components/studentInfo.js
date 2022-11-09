@@ -1,4 +1,7 @@
+import React from 'react';
 import person from '../assets/generic-person.jpg'
+
+
 export default function StudentInfo(){
     return(
         <section id="student-info">

@@ -1,8 +1,14 @@
+import React, {useState} from 'react';
 import { Route, Routes, Link } from 'react-router-dom'
 import DoneUnits from './doneUnits'
 import RegisterCourse from './registerCourse'
 import Searchbar from './searchbar'
+
+
 export default function Academics(){
+    const [search, setSearch] = useState('')
+    const [units, setUnits] = useState([]);
+
     return(
     <section id="academics">
         <nav>
@@ -13,8 +19,9 @@ export default function Academics(){
         <main>
             <Routes>
                 <Route path='/' element={<DoneUnits/>}/>
-                <Route path='/doneUnits' element={<DoneUnits/>}/>
-                <Route path='/register' element={<RegisterCourse/>}/>
+                <Route path='/doneUnits' element={<DoneUnits units={units} setUnits={setUnits} search={search} setSearch={setSearch}/>}/>
+                <Route path='/register' element={<RegisterCourse units={units} setUnits={setUnits}/>}/>
+                <Route path='/search' element={<Searchbar search={search} setSearch={setSearch}/>}/>
             </Routes>
         </main>
         
